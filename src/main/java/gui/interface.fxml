@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane alignment="TOP_CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="220.0" prefWidth="400.0" style="-fx-background-color: #87CEEB;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.gui.MainController">
+   <children>
+         <Label>
+            <font>
+               <Font size="12.0" />
+            </font>
+      </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="334.0" text="Калькулятор нахождения НОК и НОД" textAlignment="CENTER" textFill="#045fb3">
+            <font>
+               <Font name="Courier New Bold" size="14.0" />
+            </font>
+         </Label>
+         <Label prefHeight="16.0" prefWidth="382.0" text="Введите ниже ряд чисел, разделенных пробелом, " textAlignment="CENTER" textFill="#045fb4" textOverrun="CLIP">
+            <font>
+               <Font name="Courier New" size="14.0" />
+            </font>
+         </Label>
+         <Label text="для которых вы хотите найти НОК и НОД" textFill="#045fb4">
+            <font>
+               <Font name="Courier New" size="14.0" />
+            </font>
+         </Label>
+         <Label textAlignment="CENTER">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <TextField fx:id="solveField" centerShape="false" prefHeight="26.0" prefWidth="328.0" promptText="Ряд чисел, разделенных пробелом" style="-fx-background-color: #a9e2f3;">
+            <font>
+               <Font name="Courier New Bold" size="14.0" />
+            </font>
+         </TextField>
+         <Label>
+            <font>
+               <Font size="8.0" />
+            </font>
+         </Label>
+         <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="23.0" prefWidth="382.0">
+            <children>
+                  <Label text="НОД: " textFill="#045fb4">
+                     <font>
+                        <Font name="Courier New" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gcdValue" editable="false" prefHeight="16.0" prefWidth="63.0" promptText="НОД" style="-fx-background-color: #a9e2f3;">
+                     <font>
+                        <Font name="Courier New Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label text="                      ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="НОК: " textFill="#045fb4">
+                     <font>
+                        <Font name="Courier New" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lcmValue" editable="false" prefHeight="16.0" prefWidth="63.0" promptText="НОК" style="-fx-background-color: #a9e2f3;">
+                     <font>
+                        <Font name="Courier New Bold" size="14.0" />
+                     </font>
+                  </TextField>
+            </children>
+         </FlowPane>
+         <Label>
+            <font>
+               <Font size="6.0" />
+            </font>
+         </Label>
+         <Button mnemonicParsing="false" onAction="#click" prefHeight="4.0" prefWidth="81.0" style="-fx-background-color: #a9e2f3;" text="Найти!" textFill="#045fb3">
+            <font>
+               <Font name="Courier New" size="12.0" />
+            </font>
+         </Button>
+         <Label>
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+          <Label fx:id="invalidFormat" text="Неправильный формат данных!" textFill="RED" visible="false">
+              <font>
+                  <Font name="Courier New" size="12.0" />
+              </font>
+          </Label>
+   </children>
+</FlowPane>
